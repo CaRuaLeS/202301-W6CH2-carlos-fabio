@@ -10,7 +10,7 @@ export function Cards() {
     <div>
       <ul className="characters-list row list-unstyled">
         {characters.map((character) => (
-          <li className="col-md-3">
+          <li key={1} className="col-md-3">
             <Card character={character} />
           </li>
         ))}

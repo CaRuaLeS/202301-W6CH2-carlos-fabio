@@ -1,7 +1,3 @@
-// export function taskReducer(state, action) {
-//   return state;
-// }
-
 import { createReducer } from "@reduxjs/toolkit";
 import { CharacterStructure } from "../components/card/model/card";
 import * as ac from "./characters.actions.creator";
