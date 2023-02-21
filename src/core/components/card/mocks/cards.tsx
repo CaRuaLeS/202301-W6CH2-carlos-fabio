@@ -1,6 +1,6 @@
-import { CardStructure } from "../model/card";
+import { CharacterStructure } from "../model/card";
 
-export const MOCK_CARDS: CardStructure[] = [
+export const MOCK_CARDS: CharacterStructure[] = [
   {
     name: "Joffrey",
     family: "Baratheon",

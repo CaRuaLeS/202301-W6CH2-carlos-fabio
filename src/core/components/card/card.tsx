@@ -1,6 +1,6 @@
-import { CardStructure } from "./model/card";
+import { CharacterStructure } from "./model/card";
 
-export function Card({ character }: { character: CardStructure }) {
+export function Card({ character }: { character: CharacterStructure }) {
   return (
     <div>
       <li className="character col">
@@ -38,12 +38,12 @@ export function Card({ character }: { character: CardStructure }) {
                 {character.dexterity !== undefined && (
                   <li>Dexterity: {character.dexterity}</li>
                 )}
-                {character.advisor !== undefined && (
+                {/* {character.advisor !== undefined && (
                   <li>Advises: {character.advisor}</li>
                 )}
                 {character.servant !== undefined && (
                   <li>Serves: {character.servant}</li>
-                )}
+                )} */}
                 {character.grade !== undefined && (
                   <li>Grade: {character.grade}</li>
                 )}

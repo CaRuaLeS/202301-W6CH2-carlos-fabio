@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { Card } from "../card/card";
-import { CardStructure } from "../card/model/card";
+import { CharacterStructure } from "../card/model/card";
 
 jest.mock("../card/card", () => ({
   Card: () => <div data-testid="mock-card">mock card</div>,
@@ -8,7 +8,7 @@ jest.mock("../card/card", () => ({
 
 describe("given Cards component", () => {
   describe("when it is render", () => {
-    const mockCard: CardStructure = {
+    const mockCard: CharacterStructure = {
       name: "Fabio",
       family: "Snow",
       age: 24,
