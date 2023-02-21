@@ -1,4 +1,5 @@
-import { Cards } from "../components/cards/cards";
+import { Cards } from "../cards/cards";
+
 export function HomePage() {
   return (
     <section>

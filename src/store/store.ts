@@ -1,7 +1,10 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
+import { charReducer } from "../core/reducer/characters.reducer";
 
 export const store = configureStore({
-  reducer: {},
+  reducer: {
+    characters: charReducer,
+  },
 });
 
 export type AppDispatch = typeof store.dispatch;

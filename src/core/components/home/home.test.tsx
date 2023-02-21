@@ -1,8 +1,8 @@
 import { render } from "@testing-library/react";
-import { Cards } from "../components/cards/cards";
+import { Cards } from "../cards/cards";
 import { HomePage } from "./home";
 
-jest.mock("../components/cards/cards");
+jest.mock("../cards/cards");
 
 describe("given Homepage component", () => {
   describe("when it is render", () => {
