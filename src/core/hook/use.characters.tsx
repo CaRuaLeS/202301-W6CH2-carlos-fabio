@@ -9,11 +9,13 @@ export function useCharacters(repo: CharacterApiRepo) {
   const characters = useSelector((state: RootState) => state.characters);
   const dispatch = useDispatch<AppDispatch>();
 
+  console.log("hola");
   useEffect(() => {
     const loadChar = async () => {
       try {
         const data = await repo.loadChar();
         dispatch(ac.loadCreator(data));
+        console.log(data);
       } catch (error) {
         console.log((error as Error).message);
       }
