@@ -1,4 +1,4 @@
 export const charactersActions = {
-  load: "tasks@load",
-  update: "tasks@update",
+  load: "chars@load",
+  update: "chars@update",
 };

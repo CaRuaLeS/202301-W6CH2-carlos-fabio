@@ -35,14 +35,14 @@ const mockPayload: CharacterStructure = {
 describe("Given a charReducer function", () => {
   describe("When we load an array of characters' objects", () => {
     test("Then it should load this array", () => {
-      let result = charReducer(mockChar, loadCreator(mockChar));
+      let result = charReducer([], loadCreator(mockChar));
       expect(result).toEqual(mockChar);
     });
   });
   describe("When we update a character's object", () => {
     test("Then it should update a object", () => {
       let result = charReducer(mockChar, updateCreator(mockPayload));
-      expect(result).toEqual(mockChar);
+      expect(result).toEqual([mockChar[0], mockPayload]);
     });
   });
   describe("When we check the default case", () => {
